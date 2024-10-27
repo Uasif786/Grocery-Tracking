@@ -1,15 +1,19 @@
-Author: Umar Asif
-Date: [Oct 20, 2024]
-Overview
-The application provides a menu for users to interact with which uses items provided in the input file (CS210_Project_Three_Input_File.txt). The program lets the users use different options to search for item frequencies of specific item or display the frequencies of all items and gives an option to display a histogram of item frequencies. The program also saves frequency data to a backup file (frequency.dat).
-Design
-The structure of the program uses a map data structure in C++ to store and show the frequency of each item. The design consists of three main functions:
-1. File Processing: Reads input file and provides item frequencies.
-2. Menu System: Allows users to use the program through multiple options, such as looking up item frequency, showing all frequencies in the file, and providing a histogram.
-3. Data Backup: Writes a backup file (frequency.dat).
-Functionality
-The program functionalities:
-• Menu Option 1 Prompt a user to input the item, or word, they wish to look for 
-• Menu Option 2: Displays a list of all items and frequencies.
-• Menu Option 3: Displays a histogram, asterisk represents an item’s frequency.
-• Menu Option 4: Exits the program and saves the item frequency data to frequency.dat.
+Project Summary
+The Grocer project aimed to create a menu-driven application to analyze the frequency of purchased items based on an input file. It solved the problem of automating the task of counting the occurrences of each item purchased, allowing the user to search for item frequencies, view a list of all item frequencies, and display a histogram. Additionally, the program created a backup file to ensure data persistence.
+
+Key Strengths
+One aspect that went particularly well was implementing a structured menu system that separated functionality based on user selection. This allowed users to interact smoothly with the program and provided a clear output format for the data. Additionally, the code was organized to simplify the use of functions for specific tasks like reading from and writing to files, improving readability and modularity.
+
+Potential Enhancements
+Efficiency: By optimizing file reading and writing operations, the program could handle larger files more effectively. Using more efficient data structures, like unordered maps for faster access, could also reduce lookup times, especially with larger datasets.
+Security: Implementing input validation could prevent potential runtime errors. Checking for invalid file formats or unexpected input values would enhance the program's robustness.
+Flexibility: Allowing the user to select different input files or modify search criteria could increase the program’s adaptability.
+
+Challenges and Solutions
+The most challenging part of the code was handling file input/output efficiently and ensuring accurate frequency tracking. Overcoming this required reading the documentation on C++ file handling methods and experimenting with map and unordered_map containers to find the best fit for tracking item frequencies. To support this, I relied on additional C++ resources like online tutorials, documentation, and community forums to clarify how to handle file operations and map manipulation.
+
+Transferable Skills
+File Handling, Skills in reading from and writing to files are essential for many applications that involve data management.
+Data Structures and familiarity with map and unordered_map in C++ will be useful for efficient data storage and retrieval in future projects.
+Problem-Solving
+
